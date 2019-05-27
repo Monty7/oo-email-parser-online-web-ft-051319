@@ -11,7 +11,7 @@ class EmailParser
   def parse
     @email_arr_comma = @email_addresses.split(", ")
     @email_arr_space = @email_addresses.split(" ")
-    
+    @email
   end
   
 end
