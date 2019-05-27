@@ -11,7 +11,7 @@ class EmailParser
   
   def parse
     @emails = []
-    @email_arr_comma = @email_addresses.split(", ")
+    @email_arr_comma = @email_addresses.split(/[\s,]+/)
     @email_arr_space_comma = @email_addresses.split(",")
     @email_arr_space = @email_addresses.split(" ")
     @emails.push(@email_arr_comma, @email_arr_space, @email_arr_space_comma)
