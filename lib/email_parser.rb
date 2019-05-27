@@ -14,6 +14,7 @@ class EmailParser
     @emails = [@email_arr_comma, @email_addresses]
     @emails.flatten!
    # @emails.uniq
+   binding.pry
   end
   
 end
