@@ -13,6 +13,7 @@ class EmailParser
     @emails = []
     @email_arr_comma = @email_addresses.split(/[\s,]+/)
     @emails.uniq!
+    binding.pry
   end
   
 end
