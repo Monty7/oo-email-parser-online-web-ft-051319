@@ -19,7 +19,7 @@ class EmailParser
     @emails.collect! {|email| email.strip                }
     @emails.collect! {|email| email.tr(',', '')}
     @emails.uniq
-   #binding.pry
+   binding.pry
   end
   
 end
