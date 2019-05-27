@@ -15,8 +15,8 @@ class EmailParser
     @email_arr_space_comma = @email_addresses.split(",")
     @email_arr_space = @email_addresses.split(" ")
     @emails.push(@email_arr_comma, @email_arr_space, @email_arr_space_comma)
-    @emails.flatten!
-    @emails.uniq
+    #@emails.flatten!
+   # @emails.uniq
    binding.pry
   end
   
