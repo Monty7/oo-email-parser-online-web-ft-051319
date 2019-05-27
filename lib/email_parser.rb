@@ -17,7 +17,7 @@ class EmailParser
     @emails.push(@email_arr_comma, @email_arr_space, @email_arr_space_comma)
     @emails.flatten!
     @emails.collect! {|email| email.strip
-                              email.tr(',', '')}
+                              }
    # @emails.uniq
    binding.pry
   end
