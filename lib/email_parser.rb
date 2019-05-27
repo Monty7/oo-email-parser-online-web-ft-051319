@@ -10,9 +10,10 @@ class EmailParser
   end
   
   def parse
+    @emails = []
     @email_arr_comma = @email_addresses.split(", ")
     @email_arr_space = @email_addresses.split(" ")
-    @emails = [@email_arr_comma, @email_space]
+    @emails.push(@email_arr_comma, @email_arr_space)
    # @emails.flatten!
    # @emails.uniq
    binding.pry
